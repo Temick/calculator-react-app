@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border: 1px solid black;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(203, 241, 15);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h3 {
+  color: #333;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+h3:hover {
+  color: #007bff;
+}
+
+input {
+  color: #333;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+input:hover {
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  color: #fff;
+  background-color: #007bff;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #0056b3;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  transform: translateY(1px);
+}
+
+.operations {
+  display: flex; /* Использовать flex-контейнер */
+  justify-content: space-around; /* Распределить пространство вокруг кнопок */
+  align-items: center; /* Выравнивать кнопки по центру вертикально */
+  padding: 10px; /* Добавить отступы вокруг блока div */
+  background-color: #f4f4f4; /* Цвет фона */
+}
+
+.btnOper {
+  padding: 10px;
 }
